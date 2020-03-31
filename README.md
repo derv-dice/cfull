@@ -1,5 +1,5 @@
 # cfull
-Simple Golang pakage to set RGB color of fmt.Print output
+Simple Golang package to set RGB color of fmt.Print output
 
 > It has only one method - SetRGB, but this is enought to do full-color output in Terminal using `fmt.Print()`
 
