@@ -71,3 +71,30 @@ Simple Golang package to set RGB color of fmt.Print output
 ```
 
 ![example](https://github.com/DERVdice/cfull/blob/master/Example.png)
+
+## Another way
+
+You can make colorfull output without this package (Please, star if it helps).
+All you need is use one of construtcions below. Just place it into fmt.Print()
+
+### 1. RGB Foreground:
+
+```golang
+    // Set color by changing nums "255"
+    fmt.Sprintf("\033[38;2;%s;%s;%sm%s\033[0m", "255", "255", "255", YourStringText)
+```
+
+
+### 2. RGB Background:
+
+```golang
+    // Set color by changing nums "255"
+    fmt.Sprintf("\033[48;2;%s;%s;%sm%s\033[0m", "255", "255", "255", YourStringText)
+```
+
+### 3. RGB Foreground + RGB Background:
+
+```golang
+// Set foreground color by changing first three numbers and background by changing last 3 numbers"
+    fmt.Sprintf("\033[38;2;%s;%s;%sm\033[48;2;%s;%s;%sm%s\033[0m", "255", "255", "255", YourStringText)
+```
