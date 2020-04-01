@@ -2,6 +2,7 @@
 Simple Golang package to set RGB color of fmt.Print output
 
 > It has only one method - SetRGB, but this is enought to do full-color output in Terminal using `fmt.Print()`
+>> You can use https://htmlcolorcodes.com/ to pick RGB color
 
 ## Using examples
 
