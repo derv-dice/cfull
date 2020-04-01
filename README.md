@@ -96,5 +96,5 @@ All you need is use one of construtcions below. Just place it into fmt.Print()
 
 ```golang
 // Set foreground color by changing first three numbers and background by changing last 3 numbers"
-    fmt.Sprintf("\033[38;2;%s;%s;%sm\033[48;2;%s;%s;%sm%s\033[0m", "255", "255", "255", YourStringText)
+    fmt.Sprintf("\033[38;2;%s;%s;%sm\033[48;2;%s;%s;%sm%s\033[0m", "255", "255", "255", "255", "255", "255", YourStringText)
 ```
